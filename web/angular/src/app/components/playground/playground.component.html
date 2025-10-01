@@ -1,0 +1,13 @@
+<div class="playground">
+  <h2>Micro-Transformer PT-BR</h2>
+  <div class="row">
+    <textarea [(ngModel)]="prompt" rows="6" placeholder="Texto em PT-BR..."></textarea>
+  </div>
+  <div class="row controls">
+    <label>Temperatura <input type="number" [(ngModel)]="temperature" step="0.1" min="0.1" max="1.5" /></label>
+    <label>Top-K <input type="number" [(ngModel)]="topK" step="1" min="1" max="200" /></label>
+    <label>Tokens <input type="number" [(ngModel)]="tokens" step="1" min="8" max="256" /></label>
+    <button (click)="run()" [disabled]="busy">{{ busy ? 'Gerando...' : 'Gerar' }}</button>
+  </div>
+  <pre class="output">{{ output }}</pre>
+</div>

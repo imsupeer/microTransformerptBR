@@ -1,0 +1,22 @@
+.playground {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.row {
+  margin: 12px 0;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+textarea {
+  width: 100%;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace;
+}
+.output {
+  background: #0b0b0b;
+  color: #e6e6e6;
+  padding: 12px;
+  border-radius: 8px;
+  min-height: 160px;
+  white-space: pre-wrap;
+}
